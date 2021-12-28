@@ -1,29 +1,46 @@
 
+## About Project
 
-### Updates taken
+Simple Order Creation Process
 
-- include required files using require_once
-- adding magic method __construct with every class
-- can pass parameters through class 
-- shipping class will extend address from shipping class 
-- this will calculate tax through this method calculate_tax()
-- calculate_tax() checks for used shipping way and accordingly adds tax of country
-- products class extends from shipping class
-- calculate_price() method wil loop through product's attributes
-- this method will change price (increment or decrement) according to key (name of attribute)
-- user class will extend from address class
-- this will producr adress used when change_status() of order 
-- this will create object of this class returning different results according to dynamic parameters
-- also dependent classes extend from parent classes
-- added comments for each condition statement
-- converted product attributes to mutlidimensional array 
-- first level represents key (size or color)
-- second one represents possible values of this key 
-- tested every class seperately after changes
-- passed parameters to order object should include user info and shipping info
-- this will print recipt
-- receipt contains the following :- 
-- product names , categories, sizes, colors, total price 
+- also can be performed using web interface and api
+- api replaced authentication with field user_id (mandatory parameter)
+- api replaced order total amount with amount (mandatory parameter)
+- check for user type 
+- according to user type and order sequence , commission is classified with specific percentage
+- hepler functions are responsible for detecting user type 
+- hepler functions are responsible for detecting either order is first or not 
+
+## how to get started
+
+### Web interface
+
+- clone repo using git bash command line
+- cd project name
+- composer install 
+- add .env file 
+- create database name of you choice
+- run php:artisan migrate
+- run php artisan db:seed
+- hit login in url 
+- login credentials differ according to logged in user
+- free account user can login with email  freeEmail@example.com
+- premium account user can login with email  premiumEmail@example.com
+- password is password for two cases 
+- after successful login user will be redirected to some dummy order details (3 products)
+- sum of these products' prices represents order amount
+- after clicking confirm , he will be redirected to list of orders got done
+- each user can accesss only his orders
+
+### Api Postman 
+
+- hit request api/v1/create/order 
+- has validation for user_id , and amount 
+- user_id field represents authenticated user
+- amount field order total amount
+- order created successfully
+- returned response has order details , user details and commission details
+
 
 
 
