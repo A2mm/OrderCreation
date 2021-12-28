@@ -22,11 +22,7 @@
 - passed parameters to order object should include user info and shipping info
 - this will print recipt
 - receipt contains the following :- 
--- product names
--- categories
--- sizes
--- colors
--- total price 
+- product names , categories, sizes, colors, total price 
 
 
 
