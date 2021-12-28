@@ -2,6 +2,7 @@
 
 ### Updates taken
 
+- include required files using require_once
 - adding magic method __construct with every class
 - can pass parameters through class 
 - shipping class will extend address from shipping class 
