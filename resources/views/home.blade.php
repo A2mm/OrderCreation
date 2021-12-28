@@ -20,7 +20,7 @@
     <body class="antialiased">
         <div class="container">
 
-            <a href="/logout" class="btn btn-danger" style="margin-top: 30px;"> Logout</a>
+            <a href="/logout" class="btn btn-danger" style="margin-top: 30px;"> Logout </a>
             <a href="/get/orders" class="btn btn-info" style="margin-top: 30px;"> My Orders </a>
 
             <div class="row" style="margin-top: 30px;">
