@@ -16,11 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['as' => 'web.', 'namespace' => 'Web\V1'], function () 
 {
-	Route::get('/', 'OrderController@get_create')->name('get_create');
+	// Route::get('/', 'OrderController@get_create')->name('get_create');
     Route::post('/order/create', 'OrderController@create_order')->name('create_order');
     Route::get('/get/orders', 'OrderController@index')->name('orders.index');
 });
-
 
 
 Auth::routes();
